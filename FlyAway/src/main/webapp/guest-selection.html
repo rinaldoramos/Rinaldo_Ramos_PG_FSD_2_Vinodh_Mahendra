@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>Hello!! Welcome to FLyAway</h3>
+
+	<p>
+		Due to covid-19, in order to ensure the upmost safety of our loved
+		customers by enforcing the security policies, we are experiencing
+		longer periods during the checking.<br /> For this reason, make sure
+		to be at least 2 hours prior your trip specially during rush hours.
+		Thank you for your cooperation and understanding.
+	</p>
+	<hr />
+	<hr />
+
+	<h4>Please make a selection from the options below</h4>
+	
+	<form action="/FlyAway/GuestFlightOptionServlet" method="post">
+		<table border="3">
+			<tbody>
+				<tr>
+					<td>Please choose a date:</td>
+					<td><input type="date" name="trip-date"></td>
+				</tr>
+				<tr>
+					<td>From</td>
+					<td>
+						<select name="sourceCountry">
+							<option>USA</option>
+							<option>Dominican Republic</option>
+							<option>UK</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>To</td>
+					<td>
+						<select name="destinationCountry">
+							<option>USA</option>
+							<option>Dominican Republic</option>
+							<option>UK</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>No. of passangers</td>
+					<td><input type="number" name="passangers"/></td>
+				</tr>
+				<tr>
+					<td><input type="submit" style="width:100%" value="Send"/> </td>
+					<td><input type="reset" style="width:100%" value="Clear"/> </td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+
+</body>
+</html>

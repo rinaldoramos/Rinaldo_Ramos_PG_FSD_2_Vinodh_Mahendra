@@ -40,7 +40,7 @@ public class AuthenticationFilter implements Filter {
 			chain.doFilter(request, response);
 		}else {
 			PrintWriter out = response.getWriter();
-			out.println("<h3>Sorry, you are not authorizrd to access this resource</h3>");
+			out.println("<h3>Sorry, you are not authorized to access this resource</h3>");
 		}	
 	}
 
